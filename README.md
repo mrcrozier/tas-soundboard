@@ -18,13 +18,19 @@ With **Safari** (has to be Safari unfortunately), [navigate to the website](http
 
 Tap the 'share' icon in the middle of the bottom screen
 
+![Alt Text](/images/clickShare.jpg)
+
 Scroll down and tap 'Add to Home Screen'
+
+![Alt Text](/images/addToHome.jpg)
 
 Give it whatever name you want and click Add
 
 #### On Android
 
 [Navigate to the website](https://soundboard-pwa.firebaseapp.com/) and you should be greeted with something similar to 
+
+![Alt Text](/images/androidAddToHome.jpg)
 
 if your device and Android version support PWA's. Click Add, and then you're good to go!
 
