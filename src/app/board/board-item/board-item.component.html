@@ -1,0 +1,2 @@
+<button class="largePadding" nbButton hero status="{{ buttonColor() }}" shape="semi-round" (click)="playAudio()">{{ item.name }}</button>
+<audio *ngIf="audio" id="{{ item.name }}" src="{{ item.sound }}"></audio>

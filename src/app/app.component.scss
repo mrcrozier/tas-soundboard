@@ -1,0 +1,44 @@
+button {
+  &:hover { opacity: 0.9; }
+  &:active {
+    // TODO: improve and clean up
+    animation: changecolor 5.0s;
+    box-shadow: 0 4px 8px 5px rgba(0,0,0,.12),0 2px 4px 0 rgba(0,0,0,.08);
+  }
+  flex: 1;
+  width: 80%;
+  margin-left: 2rem;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  position: absolute;
+  bottom: -1rem;
+}
+
+.svgContainer {
+  display: flex;
+  position: absolute
+}
+
+.fa-linkedin-in {
+  left: 2rem;
+}
+
+.fa-github {
+  right: 2rem;
+}
+
+.largePadding {
+  padding: 2rem 2.5rem !important;
+  white-space: normal;
+}
+
+@keyframes changecolor {
+  from { filter: hue-rotate(0deg) }
+  50% { filter: hue-rotate(30deg) }
+  // 66% { filter: hue-rotate(-30deg) }
+  to { filter: hue-rotate(0deg) }
+}

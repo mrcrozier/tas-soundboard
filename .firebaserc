@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "soundboard-pwa": {
+      "hosting": {
+        "tasoundboard": [
+          "soundboard-pwa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "soundboard-pwa"
+  }
+}

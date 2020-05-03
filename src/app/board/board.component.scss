@@ -1,0 +1,68 @@
+$phone: 500px;
+$smallphone: 365px;
+
+@mixin phone-screen {
+  @media screen and (max-width: $phone) {
+    @content
+  }
+}
+
+@mixin small-phone-screen {
+  @media screen and (max-width: $smallphone) {
+    @content
+  }
+}
+
+main {
+    display: grid;
+    // grid-template-columns: 200px 200px 200px;
+    // grid-gap: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      @include phone-screen {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      }
+      @include small-phone-screen {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      }
+      grid-gap: calc(var(--dense-padding) * 0.9);
+          padding: var(--dense-padding);
+          font-size: 1.5rem;
+      @include phone-screen {
+        font-size: 1.3rem;
+      }
+            margin-bottom: calc(var(--dense-padding) * 0.5);
+
+
+}
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+//
+// app-square {
+//     border: 1px gray solid;
+//     height: 200px;
+// }
+
+// main {
+//     padding: var(--dense-padding);
+//     // background-color: var(--background-color);
+//       color: var(--text-color-dark);
+//       font-size: 1.5rem;
+//       @include phone-screen {
+//         font-size: 1.3rem;
+//       }
+//       margin-bottom: calc(var(--dense-padding) * 0.5);
+//       display: grid;
+//       // 170px
+//       grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+//       @include phone-screen {
+//         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+//       }
+//       @include small-phone-screen {
+//         grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+//       }
+//       grid-gap: calc(var(--dense-padding) * 0.9);
+
+//     // padding-bottom: var(--main-padding);
+// }
